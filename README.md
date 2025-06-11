@@ -87,7 +87,7 @@ python pandoc_gui.py
 | html | .html |
 | commonmark | .md |
 | markdown | .md |
-| mediawiki | .wiki |
+| mediawiki | .txt |
 | pdf | .pdf |
 | pptx | .pptx |
 | latex | .tex |
