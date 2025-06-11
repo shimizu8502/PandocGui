@@ -11,7 +11,7 @@ Pandocを使用したファイル変換を簡単に行うためのWindows向けG
 - **直感的なGUI**: Tkinterベースの使いやすいインターフェース
 - **多様な形式サポート**: 
   - 入力形式: CSV, Word文書(docx), OpenDocument(odt), HTML, CommonMark, Markdown, MediaWiki, LaTeX
-  - 出力形式: Word文書(docx), OpenDocument(odt), HTML, CommonMark, Markdown, MediaWiki, PDF, PowerPoint(pptx), LaTeX
+  - 出力形式: Word文書(docx), OpenDocument(odt), HTML, CommonMark, Markdown, MediaWiki, LaTeX
 - **設定の保存**: アプリケーション終了時に設定を自動保存し、次回起動時に復元
 - **エラーハンドリング**: 適切なエラーメッセージとステータス表示
 - **非同期処理**: 変換処理中もUIが応答性を保つ
@@ -87,9 +87,7 @@ python pandoc_gui.py
 | html | .html |
 | commonmark | .md |
 | markdown | .md |
-| mediawiki | .txt |
-| pdf | .pdf |
-| pptx | .pptx |
+| mediawiki | .wiki |
 | latex | .tex |
 
 ## 設定ファイル

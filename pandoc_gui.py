@@ -34,9 +34,7 @@ class PandocGUI:
             'html': '.html',
             'commonmark': '.md',
             'markdown': '.md',
-            'mediawiki': '.txt',
-            'pdf': '.pdf',
-            'pptx': '.pptx',
+            'mediawiki': '.wiki',
             'latex': '.tex'
         }
         
@@ -104,7 +102,7 @@ class PandocGUI:
         output_format_label = ttk.Label(main_frame, text="出力形式:")
         output_format_label.grid(row=7, column=0, sticky=tk.W, pady=(0, 5))
         
-        output_formats = ['docx', 'odt', 'html', 'commonmark', 'markdown', 'mediawiki', 'pdf', 'pptx', 'latex']
+        output_formats = ['docx', 'odt', 'html', 'commonmark', 'markdown', 'mediawiki', 'latex']
         self.output_format_combo = ttk.Combobox(main_frame, textvariable=self.output_format, 
                                                values=output_formats, state="readonly", width=20)
         self.output_format_combo.grid(row=8, column=0, sticky=tk.W, pady=(0, 5))
@@ -178,6 +176,8 @@ class PandocGUI:
         if not self.output_format.get():
             self.status_text.set("エラー: 出力形式が選択されていません")
             return
+        
+
         
         # 出力ファイルパスを生成
         input_path = Path(self.input_file_path.get())
@@ -293,6 +293,8 @@ class PandocGUI:
         
         # アプリケーションを終了
         self.root.destroy()
+    
+
 
 
 def main():
